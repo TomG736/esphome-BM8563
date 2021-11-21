@@ -5,10 +5,6 @@
 #include "esphome/components/i2c/i2c.h"
 
 
-#ifndef lowByte
-  #define lowByte(a)  ((uint8_t)(a & 0xFF))
-  #define highByte(a) ((uint8_t)((a >> 8) & 0xFF))
-#endif
 namespace esphome {
 namespace bm8563 {
 
