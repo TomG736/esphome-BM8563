@@ -59,6 +59,7 @@ class BM8563 : public Component, public i2c::I2CDevice {
 
     uint8_t trdata[7];
     optional<uint64_t> sleep_duration_;
+    bool setupComplete;
 };
 
 }  // namespace bm8563
